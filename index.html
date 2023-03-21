@@ -22,11 +22,32 @@
 
   <div id="content">
     <section id="about" class="section">
-    <br/>
-    <br/>
+      <br/>
+      <br/>
+      <br/>
     <h1>About me:</h1>
     <br/>
-    היסטוריה, תחביבים, קורות חיים, תחומי עניין, דמות שהשפיעה עליו במרוצת החיים 
+    <p class="aboutme">
+      My grandfather's first name is Michael and his last name is Hickri and he was born on July 23, 1942.
+      His father's name was Reuven and his mother's name was Judith, and he was the only child of his parents.
+      He grew up in the Nahaliel neighborhood in Hadera, which was a place with fruit trees, pine trees, sand and private houses.
+      The thing that characterized the people of the settlement was that they were military men, agricultural workers and scholars.
+      My grandfather lived with his grandparents in a private house with 1 floor and 7 rooms,
+       and there were other rooms that were rented out to people.
+       The conditions in his home were excellent, his grandfather was a butcher and they always had plenty of meat,
+      and their yard was full of fruit trees and vegetables.
+      He studied at Bilo state-religious school in  Hadera and was in a youth movement called Gadna, 
+      where he trained militarily and athletically.
+      He was really tall and had a lot of friends.
+      In addition, he was the painter of the school and he painted huge paintings and pictures from the Bible.
+      My grandfather's family used to be together on holidays and all the relatives came to their house.
+      On vacation days, the family used to travel.
+      <br>
+      He remembers the authentic Yemeni food he ate when he was a child 
+      and on Saturdays he and his family would sit together under the trees in the yard to eat fruit, 
+      crack kernels and tell stories.
+    </p>
+    <!-- היסטוריה, תחביבים, קורות חיים, תחומי עניין, דמות שהשפיעה עליו במרוצת החיים  -->
     <br/>
     <br/>
     </section>
@@ -38,11 +59,11 @@
       <!-- Photo Grid -->
     <div class="image-grid"> 
 
-      <img class= "image-grid-col-2 image-grid-row-2" src="static/logo.jpeg" alt="architecture">
-      <img src="static/logo.jpeg" alt="architecture">
-      <img src="static/logo.jpeg" alt="architecture">
-      <img src="static/logo.jpeg" alt="architecture">
-      <img src="static/logo.jpeg" alt="architecture">
+      <img class= "image-grid-col-2 image-grid-row-2" src="static/pic4.jpg" alt="architecture">
+      <img src="static/pic1.jpg" alt="architecture">
+      <img src="static/pic2.jpg" alt="architecture">
+      <img src="static/pic3.jpg" alt="architecture">
+      <img src="static/pic6.png" alt="architecture">
       
     </div>
 
@@ -55,8 +76,9 @@
     <section id="playlist" class="section"><b>
     <br/>
     <h1>My favorite song: </h1>
-
+      <div class="music">
     <iframe width="700px" height="600px" src="https://www.youtube.com/embed/dcbh9lmdpKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br/>
+    </div>
     <br/>
     </section>
 
@@ -73,7 +95,10 @@
 
     <section id="qrcoder" class="section">
     <br/>
-    <h1>scan my code</h1>
+    <h1>Scan my code:</h1>
+    <div class="QR">
+    <img src="static\QR.png">
+  </div>
     <br/>
     <br/>
     <br/>
@@ -118,7 +143,7 @@
     <section id="contact" class="contact">
 
     <br/>
-    <form action="mailto:reutme@post.bgu.ac.il" class="mail" method="post">Contact me:</a>
+   <form action="mailto:reutme@post.bgu.ac.il" class="mail" method="post" enctype="text/plain">Contact me:
     
     <div class="container">
 
@@ -128,16 +153,17 @@
       <input type="email" placeholder="mail" id="email" name="email" required></li>
       </div>   
 
-      <div class="subject">
+      <!-- //this is note
+       <div class="subject">
         <br/>
         <li><label for="name">Subject:</label>
           <input type="text" placeholder="subject" name="name" required></li>
-      </div>
+      </div> utill here is a noote -->
 
       <div class="message">
         <br/>
         <li><label for="message">Message:</label>
-          <textarea id="message" name="message" form="usrform" required></textarea></li>
+          <textarea id="message" name="message" required></textarea></li>
       </div>
 
       <div class="smile">
@@ -154,12 +180,12 @@
       </div>
   
     </div>
-
-  
-  
-  
     <input type="submit" value="send mail">
-    
+  </form> 
+
+
+
+
     <br/>
     <br/>
     </section>

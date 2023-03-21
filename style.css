@@ -39,6 +39,7 @@ a.item {
 	background-color: #ddd;
 	color:black;
 	text-shadow: 2px 2px 5px white;
+	border-radius: 25px;
 
   }
 
@@ -54,11 +55,11 @@ a.item {
 }
 
 h1 {
+	text-align: center;
 	
-	padding-left: 20px;
 	text-shadow: 10px 5px 4px black;
 	font-size: 40px;
-	font-family:Segoe Print;
+	font-family: century Gothic;
 	color: white;
 	
 }
@@ -80,29 +81,55 @@ h1 {
 	margin-right: 12px;
 	padding-right: 20px;
 	
-	color:rgba(6, 117, 108, 0.918);
-	text-shadow: 2px 2px 5px rgb(248, 246, 246);
+	font-family:Goudy Old Style;
+	color: white;
+	
 	font-size: 20px;
-	font-family: fantasy;
+
 	
 }
 
 div.like{
-	margin-left: 15px;
-	width: 50%;
+	text-align: center;
 	border-radius: 25px;
-	float: left;
-	color:white;
-	background-color:rgba(102, 197, 165, 0.938);
+	margin-left: 500px;
+	margin-right: 400px;
+	
+	background-color:cadetblue;
+}
+
+
+div.music{
+	
+	text-align: center;
+	border-radius: 25px;
+	margin-left: 400px;
+	margin-right: 400px;
+
 }
 
 div.web{
 	padding-left: 20px;
-
-	font-size: 20px;
-	font-family:Segoe Print;
+	font-size: 25px;
+	font-family:Goudy Old Style	
+	;
 	color: white;
 }
+
+p.aboutme{
+	padding-left: 20px;
+	font-size: 25px;
+	font-family:Goudy Old Style;
+	color: white;
+	background-color: #0f0f0f;
+	transition: 0.5s;
+
+}
+div.QR{
+	text-align: center;
+	margin-left: 15px;	
+}
+
 
 input[type=text], input[type=email] {
 	margin-left: 15px;
