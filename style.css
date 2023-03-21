@@ -20,7 +20,7 @@ body{
   
 div.toolbar{
 	float: right;
-	
+
 }
 
 a.item {
@@ -190,7 +190,7 @@ select{
 .image-grid{
 	--gap: 16px;
 	--num-cols: 4;
-	--row-height: 300px;
+	--row-height: 340px;
 
 	box-sizing: border-box;
 	padding: var(--gap);
