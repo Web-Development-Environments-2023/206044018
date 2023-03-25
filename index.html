@@ -108,33 +108,60 @@
     <section id="spa" class="section">
     <br/>
     <div class = "web">
-    <h1><u>The differences between the webs: </u></h1>
+      <p>
+    <h1><u>Main differences between web 1.0, web 2.0, web 3.0: </u></h1>
     <br/>
+    <br/>
+    <u><I>First difference - Features:</I></u>
+    <br/>
+    Web 1.0 - the page is static, not dynamic - "you get what you see".
+    <br/>
+    Web 2.0 - more dynamic, the user creates content.
+    <br/>
+    Web 3.0 - dynamic and using AI and Natural language processing to create a personal experience for each user.
     
-    <p>
-      Web 1.0 is the initial version and the websites were static, not dynamic - "you get what you see" and with basic, non-interactive design.
-      <br/>
-      Web 2.0 is the time that the websites were more collaborative, social and dynamic. The main change was the possibility of sharing content by users.
-      <br/>
-      Web 3.0 is using AI and Natural language processing therefor the websites more intelligent. The network tries to find the best information,
-      <br>
-     not only to present information but also to process it.
+    <br/>
+    <br/>
+    <u><I>Second difference - Content:</I></u>
+    <br/>
+    Web 1.0 - mostly used for companies to post information that people consume.
+    <br/>
+    Web 2.0 - more collaborative, social and there are different platforms where people can post content that other people can consume.
+    <br/>
+    Web 3.0 - people build apps that other people can interact with and companies build platforms that enable people to advertise services by encourage people-to-people relationships.
 
-      <br/>
-      <br/>
-    <u>use case of search for remedy:</u>
     <br/>
-    web 1.0 - Need to know where the site of drugs is through a portal, then search the page of specific drug and at the page need physically look for what is needed.
     <br/>
-    web 2.0 - Write in the search engine the desired drug, then you have to physically go through the results and check which ones are relevant. 
+    <u><I>Third difference - How to search:</I></u>
     <br/>
-    web 3.0 - Write in the search engine the desired drug, the search engine is with intelligent AI that understands the context. 
+    Web 1.0 - The user writes the link itself for search.
+    <br/>
+    Web 2.0 - The user searches by write the name of the search engine and get results that literally contain the words.
+    <br/>
+    Web 3.0 - The user searches by write the name of the search engine and get results that contain the words or semantically related to the search words.
+
+    
+    
+    <br/>
+    <br/>
+
+    <u><I>Use case of search for specific remedy:</I></u>
+    <br/>
+    <br/>
+    web 1.0 - The user need to input specific URL, Need to know where the site of drugs is through a portal, then search the page of specific drug and at the page need physically look for what is needed.
+    <br/>
+    <br/>
+    web 2.0 - The user write in the search engine the desired drug, then the user get the results that includes this words and have to physically go through the results and check which ones are relevant. 
+    <br/>
+    <br/>
+    web 3.0 - The user write in the search engine the desired drug, the search engine is with intelligent AI that understands the context. 
+    <br/>
+              Then the user get the results that contain the words or semantically related to the search words.
     <br/>
               In addition there were summarize of some of the pages.
               Therefore, the user knows that the returned documents are relevant to what he is looking for and it is easier for him to decide.
     
     
-
     </p>
   </div>
     <br/>
@@ -144,8 +171,8 @@
     <section id="contact" class="contact">
 
     <br/>
-   <form action="mailto:reutme@post.bgu.ac.il" class="mail" method="post" enctype="text/plain">Contact me:
-    
+
+    <form> Contact me:
     <div class="container">
 
       <div class="mail">
@@ -169,23 +196,34 @@
                 <option value="&#128522;">😊</option>
                 <option value="&#128536;">😘</option>
                 <option value="&#128515;">😀</option>
+                <option value="&#128557;">😭</option>
+                <option value="&#128553;">😩</option>
                 <option value="&#128542;">😞</option>
+                <option value="&#128561;">😱</option>
+                <option value="&#128151;">💗</option>
                 <option value="&#128540;">😜</option>
+                <option value="&#128077;">👍</option>
+                <option value="&#128078;">👎</option>
+        
               </select>
         </li>
       </div>
   
     </div>
-    <input type="submit" value="send mail">
-  </form> 
+    <div>
 
+    <input type="button" value="Send Email" onclick="mailSend()" value="Send" >
 
+    
+  <script type="text/javascript">
+    function mailSend() {
+      let message = document.getElementById("message").value;
+      let mailtoUrl = "mailto:reutme@post.bgu.ac.il" + "?subject=" + "&body=" + encodeURIComponent(message);
+      
+      window.location.href = mailtoUrl;
+    }
+  </script>
 
-
-    <br/>
-    <br/>
-    </section>
-  </div>
 
   <script>
     function addSmileToMessage() {
@@ -195,6 +233,16 @@
       document.getElementById("message").value = message + emoji;
     }
   </script>
+
+
+  </div>
+  </form> 
+
+    <br/>
+    <br/>
+    </section>
+  </div>
+
 
   <script type="text/javascript">
   $(function(){
