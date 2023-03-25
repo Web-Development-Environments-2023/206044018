@@ -190,7 +190,7 @@ select{
 .image-grid{
 	--gap: 16px;
 	--num-cols: 4;
-	--row-height: 340px;
+	--row-height: 350px;
 
 	box-sizing: border-box;
 	padding: var(--gap);
@@ -217,13 +217,6 @@ select{
 	grid-row: span 2;
 }
 
-@media screen and(max-width: 1024px) {
-	.image-grid{
-		--num-cols: 2;
-		--row-height: 200px;
-	}
-	
-}
 
 
 
